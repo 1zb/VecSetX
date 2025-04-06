@@ -25,6 +25,7 @@ pip install PyMCubes
 ## Training Example
 16 GPUs (4 GPUs with accum_iter 4)
 ```bash
+cd vecset
 torchrun \
     --nproc_per_node=4 \
     main_ae.py \
@@ -46,7 +47,7 @@ I have incorporated the following features list:
 - [x] Normalized Bottleneck (NBAE) from [LaGeM](https://arxiv.org/abs/2410.01295). No need to tune the KL weight anymore!
 - [x] SDF regression instead of occupancy classification suggested by [TripoSG](https://arxiv.org/abs/2502.06608). For now, I only use Eikonal regularization.
 
-I am planning to incorporated the following features:
+I am planning to incorporat the following features:
 - [ ] Edge sampling from [Dora-VAE](https://arxiv.org/abs/2412.17808)
 - [ ] Multiresolution training from [CLAY](https://arxiv.org/abs/2406.13897)
 - [ ] Compact autoencoder from [COD-VAE](https://arxiv.org/abs/2503.08737)
