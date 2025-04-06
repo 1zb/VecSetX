@@ -62,6 +62,18 @@ The following models will be released in this [link](https://huggingface.co/Zbal
 - `learnable_vec1024_dim1024_depth24_sdf`: Learnable Queries, 24 layers, 1024-channel attentions, 1024x1024 bottleneck, SDF regression with Eikonal regularizer
 - (Other models are training!)
 
+## Inference
+If you want to test the autoencoder, make sure the input surface point cloud is normalized,
+````python
+## surface: N x 3
+shifts = (surface.max(axis=0) + surface.min(axis=0)) / 2
+surface = surface - shifts
+distances = np.linalg.norm(surface, axis=1)
+scale = 1 / np.max(distances)
+surface *= scale
+````
+I will release a full inference script. 
+
 ## Other minor adjustments
 - Removed layernorm on KV suggested by Youkang Kong
 - Added layernorm before final output layer.
