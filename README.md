@@ -2,7 +2,10 @@
 Following the introduction of [VecSet](https://arxiv.org/abs/2301.11445), extensive work has been done to propose enhancements. This project is designed to incorporate these novel designs and to provide unifed framework for VecSet-based representations.
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-## Installation
+## :fire: Updates
+* [2025-04-06] Released traing code and a pretrained model `learnable_vec1024x32_dim1024_depth24_sdf_nb`.
+
+## :hammer: Installation
 ```bash
 conda create -y -n vecset python=3.11 -y
 pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu124
@@ -22,7 +25,7 @@ pip install tqdm
 pip install PyMCubes
 ```
 
-## Training Example
+## :train: Training Example
 16 GPUs (4 GPUs with accum_iter 4)
 ```bash
 cd vecset
@@ -40,7 +43,7 @@ torchrun \
     --warmup_epochs 1 --blr 5e-5 --clip_grad 1
 ```
 
-## Model Descriptions
+## :pencil: Model Descriptions
 The base model design is from [VecSet](https://arxiv.org/abs/2301.11445).
 I have incorporated the following features list:
 - [x] Faster training with [Flash Attention](https://github.com/Dao-AILab/flash-attention)
@@ -54,7 +57,7 @@ I am planning to incorporat the following features:
 - [ ] Quantized bottleneck (VQ).
 - [ ] (Start an issue if you have any ideas!)
 
-## Checkpoints
+## :floppy_disk: Checkpoints
 The following models will be released in this [link](https://huggingface.co/Zbalpha/VecSetX):
 - `point_vec1024x32_dim1024_depth24_sdf_nb`: Point Queries, 24 layers, 1024-channel attentions, 1024x32 normalized bottleneck, SDF regression with Eikonal regularizer
 <!-- - `point_vec1024x16_dim1024_depth24_sdf_nb`: Point Queries, 24 layers, 1024-channel attentions, 1024x16 normalized bottleneck, SDF regression with Eikonal regularizer -->
@@ -63,7 +66,7 @@ The following models will be released in this [link](https://huggingface.co/Zbal
 - `learnable_vec1024_dim1024_depth24_sdf`: Learnable Queries, 24 layers, 1024-channel attentions, 1024x1024 bottleneck, SDF regression with Eikonal regularizer
 - (Other models are training!)
 
-## Inference
+## :balloon: Inference
 If you want to test the autoencoder, make sure the input surface point cloud is normalized,
 ````python
 ## surface: N x 3
@@ -75,11 +78,11 @@ surface *= scale
 ````
 I will release a full inference script. 
 
-## Other minor adjustments
+## :bookmark_tabs: Other minor adjustments
 - Removed layernorm on KV suggested by Youkang Kong
 - Added layernorm before final output layer.
 - Added zero initialization on the final output layer.
 - Added random rotations as the data augmentations as in [LaGeM](https://arxiv.org/abs/2410.01295).
 - Adjusted code for latest version of PyTorch.
 
-## If you are using this repository in your projects, consider citing the related papers.
+## :blue_book: If you are using this repository in your projects, consider citing the related papers.
