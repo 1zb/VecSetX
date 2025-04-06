@@ -1,5 +1,5 @@
 # VecSetX
-VecSetX is a unified framework for VecSet-based representations.
+Following the introduction of [VecSet](https://arxiv.org/abs/2301.11445), extensive work has been done to propose enhancements. This project is designed to incorporate these novel designs and to provide unifed framework for VecSet-based representations.
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Installation
