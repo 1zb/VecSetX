@@ -1,0 +1,14 @@
+*.ply
+*.obj
+samples/
+shapenet*
+*.csv
+*.empty
+__pycache__
+build
+dist
+*.egg-info
+output/
+vecset/README
+eval.py
+extensions
