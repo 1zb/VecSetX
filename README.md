@@ -1,5 +1,5 @@
 # VecSetX
-Following the introduction of [VecSet](https://arxiv.org/abs/2301.11445), extensive work has been done to propose enhancements. This project is designed to incorporate these novel designs and to provide unifed framework for VecSet-based representations.
+Following the introduction of [VecSet](https://arxiv.org/abs/2301.11445), extensive work has been done to propose enhancements. This project is designed to incorporate these novel designs and to provide a unifed framework for VecSet-based representations.
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## :fire: Updates
@@ -50,7 +50,7 @@ I have incorporated the following features list:
 - [x] Normalized Bottleneck (NBAE) from [LaGeM](https://arxiv.org/abs/2410.01295). No need to tune the KL weight anymore!
 - [x] SDF regression instead of occupancy classification suggested by [TripoSG](https://arxiv.org/abs/2502.06608). For now, I only use Eikonal regularization.
 
-I am planning to incorporat the following features:
+I am planning to incorporate the following features:
 - [ ] Edge sampling from [Dora-VAE](https://arxiv.org/abs/2412.17808)
 - [ ] Multiresolution training from [CLAY](https://arxiv.org/abs/2406.13897)
 - [ ] Compact autoencoder from [COD-VAE](https://arxiv.org/abs/2503.08737)
