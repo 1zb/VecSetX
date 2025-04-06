@@ -30,8 +30,8 @@ torchrun \
     main_ae.py \
     --accum_iter=4  \
     --model learnable_vec1024x16_dim1024_depth24_nb \
-    --output_dir output/ae/learnable_vec1024x16_dim1024_depth24_sdf \
-    --log_dir output/ae/learnable_vec1024x16_dim1024_depth24_sdf \
+    --output_dir output/ae/learnable_vec1024x16_dim1024_depth24_sdf_nb \
+    --log_dir output/ae/learnable_vec1024x16_dim1024_depth24_sdf_nb \
     --num_workers 24 \
     --point_cloud_size 8192 \
     --batch_size 16 \
