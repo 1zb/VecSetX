@@ -54,7 +54,7 @@ I am planning to incorporated the following features:
 - [ ] (Start an issue if you have any ideas!)
 
 ## Checkpoints
-The following models will be released in this link (WIP):
+The following models will be released in this [link](https://huggingface.co/Zbalpha/VecSetX):
 - `point_vec1024x32_dim1024_depth24_sdf_nb`: Point Queries, 24 layers, 1024-channel attentions, 1024x32 normalized bottleneck, SDF regression with Eikonal regularizer
 <!-- - `point_vec1024x16_dim1024_depth24_sdf_nb`: Point Queries, 24 layers, 1024-channel attentions, 1024x16 normalized bottleneck, SDF regression with Eikonal regularizer -->
 - `learnable_vec1024x32_dim1024_depth24_sdf_nb`: Learnable Queries, 24 layers, 1024-channel attentions, 1024x32 normalized bottleneck, SDF regression with Eikonal regularizer
@@ -69,4 +69,4 @@ The following models will be released in this link (WIP):
 - Added random rotations as the data augmentations as in [LaGeM](https://arxiv.org/abs/2410.01295).
 - Adjusted code for latest version of PyTorch.
 
-## 
+## If you are using this repository in your projects, consider citing the related papers.
