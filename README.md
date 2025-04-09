@@ -67,11 +67,11 @@ The following models will be released in this [link](https://huggingface.co/Zbal
 <!-- - `learnable_vec1024_dim1024_depth24_sdf`: Learnable Queries, 24 layers, 1024-channel attentions, 1024x1024 bottleneck, SDF regression with Eikonal regularizer -->
 - (Other models are training!)
 
-| model | Queries | Layers | Channels | Bottlneck (Size x Ch) | AE | Loss |
+| model | Queries | Layers | Channels | Bottlneck (Size x Ch) | Regularization | Loss |
 |------|-------|-----------|---|---|---|---|
-| `point_vec1024x32_dim1024_depth24_sdf_nb` | Point | 24 | 1024| 1024x32 | NBAE| SDF+Eikonal|
-| `learnable_vec1024x32_dim1024_depth24_sdf_nb` | Learnable | 24 | 1024|  1024x32 | NBAE| SDF+Eikonal|
-| `learnable_vec1024_dim1024_depth24_sdf` | Learnable | 24 | 1024 | 1024x1024 | AE | SDF+Eikonal|
+| `point_vec1024x32_dim1024_depth24_sdf_nb` | Point | 24 | 1024| 1024x32 | NB| SDF+Eikonal|
+| `learnable_vec1024x32_dim1024_depth24_sdf_nb` | Learnable | 24 | 1024|  1024x32 | NB| SDF+Eikonal|
+| `learnable_vec1024_dim1024_depth24_sdf` | Learnable | 24 | 1024 | 1024x1024 |  | SDF+Eikonal|
 
 ## :balloon: Inference
 If you want to test the autoencoder, make sure the input surface point cloud is normalized,
