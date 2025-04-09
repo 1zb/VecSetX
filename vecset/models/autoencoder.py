@@ -177,3 +177,11 @@ def learnable_vec1024_dim1024_depth24(pc_size=8192):
         bottleneck=Bottleneck, 
         bottleneck_args={},
     )
+    
+def point_vec1024_dim1024_depth24(pc_size=8192):
+    return create_autoencoder(
+        depth=24, dim=1024, M=1024,
+        N=pc_size, query_type='point', 
+        bottleneck=Bottleneck, 
+        bottleneck_args={},
+    )
