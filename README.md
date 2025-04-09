@@ -3,7 +3,7 @@ Following the introduction of [VecSet](https://arxiv.org/abs/2301.11445), extens
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## :fire: Updates
-* [2025-04-09] Released the pretrained model `point_vec1024x32_dim1024_depth24_sdf_nb`.
+* [2025-04-09] Released the pretrained model `point_vec1024x32_dim1024_depth24_sdf_nb` and `learnable_vec1024_dim1024_depth24_sdf`.
 * [2025-04-06] Released traing code and a pretrained model `learnable_vec1024x32_dim1024_depth24_sdf_nb`.
 
 ## :hammer: Installation
